@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
@@ -18,7 +22,7 @@
   </head>
   <body>
     <section class="main">
-      <article id="tanya-art">
+      <article id="tanya-art" class="animate__animated">
         <div class="header-box container">
           <div class="image">
             <img src="static/images/image-tanya.jpg" alt="imagen" />
@@ -26,10 +30,10 @@
 
           <div class="change-image-container">
             <div class="change-image">
-              <button id="btn-before">
+              <button onclick="changeToJohn('prev')" class="btn-before">
                 <img src="static/images/icon-prev.svg" alt="next" />
               </button>
-              <button id="btn-after">
+              <button onclick="changeToJohn('next')" class="btn-after">
                 <img src="static/images/icon-next.svg" alt="prev" />
               </button>
             </div>
@@ -60,17 +64,17 @@
         </div>
       </article>
 
-      <article id="john-art">
+      <article id="john-art" class="animate__animated">
         <div class="header-box container">
           <div class="image">
             <img src="static/images/image-john.jpg" alt="imagen" />
           </div>
           <div class="change-image-container">
             <div class="change-image">
-              <button id="btn-before">
+              <button onclick="changeToTanya('prev')" class="btn-before">
                 <img src="static/images/icon-prev.svg" alt="next" />
               </button>
-              <button id="btn-after">
+              <button onclick="changeToTanya('next')" class="btn-after">
                 <img src="static/images/icon-next.svg" alt="prev" />
               </button>
             </div>

@@ -256,3 +256,9 @@ footer {
   }
 }
 
+
+/*Animations*/
+.animate__animated.animate__fadeInRight,
+.animate__animated.animate__fadeInLeft{
+  --animate-duration: .8s;
+}
